@@ -1,4 +1,5 @@
 import ChatBox from '@/components/chatbox/ChatBox'
+import FriendsRank from '@/components/FriendRanking/FriendsRanking'
 import Header from '@/components/Header'
 import HighlightCard from '@/components/HighLightCard'
 import Navbar from '@/components/Navbar/Navbar'
@@ -33,6 +34,7 @@ export default function App() {
         <Header />
         <HighlightCard />
       </Box>
+      <FriendsRank/>
 
     </Box>
   )
