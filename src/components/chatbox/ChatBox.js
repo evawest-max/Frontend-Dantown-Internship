@@ -73,7 +73,7 @@ const ChatBox = () => {
                                     <CardBody border="none" pl="16px" display="flex" flexDirection="column" gap="4px">
                                         <Heading size='16px' fontFamily='avenir' fontWeight="800px" lineHeight="21.86px" color="background: #0F3F62;">{message.name}</Heading>
 
-                                        <Text size='14px' fontFamily='avenir' fontWeight="400px" lineHeight="19.12px" color=" #8695A0;">
+                                        <Text size='14px'  fontWeight="400px" lineHeight="19.12px" color=" #8695A0;">
                                             {message.text}
                                         </Text>
                                     </CardBody>
