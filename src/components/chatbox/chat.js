@@ -15,17 +15,17 @@ const Chat = () => {
     ];
 
     return (
-        <Box w="320px" h="311px"  borderRadius="15px">
+        <Box w="320px" h="311px"  borderRadius="15px" bg="white">
             <Box borderTopRadius="15px" background="#5DC2C4" color="white" display="flex" justifyContent="space-between" alignItems="center" pl="24px" pr="24px" h="54px">
                 <Text>Ironmen</Text>
-                <Text><IoMdClose /></Text>
+                <Text cursor="pointer"><IoMdClose /></Text>
             </Box>
 
             <Box ml="24px" mr="24px" mb="24px">
                 <Box display="flex" flexDirection="column" alignItems="center">
                     <Text mt="16px" mb="36px" textAlign="center" color="white" bg=" #072E75" w="68px" h="24px" borderRadius="20px">Today</Text>
                 </Box>
-                <Box>
+                <Box >
                     {chat.map((message, index) => {
                         return (
                             message.name === "receiver" ?
@@ -50,12 +50,12 @@ const Chat = () => {
                             maxW="222px"
                             borderRadius="100px"
                         />
-                        <InputRightElement width='4.5rem'>
+                        <InputRightElement width='4.5rem' cursor="pointer">
                             <CiFaceSmile />
                         </InputRightElement>
                     </InputGroup>
 
-                    <Text h="35px" w="40px" display="flex" justifyContent="center" alignItems="center" borderRadius="100%" background=" #F4694C" color="white" >
+                    <Text cursor="pointer" h="35px" w="40px" display="flex" justifyContent="center" alignItems="center" borderRadius="100%" background=" #F4694C" color="white" >
                         <VscSend />
                     </Text>
                 </Box>
