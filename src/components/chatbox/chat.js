@@ -30,12 +30,12 @@ const Chat = () => {
                         return (
                             message.name === "receiver" ?
                                 <Box mb="16px" display="flex" justifyContent="space-between" w="263px">
-                                    <Text size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" color=" #5DC2C4" bg=" #E0F3F3" h="38px" textAlign="center">{message.text}</Text>
-                                    <Text alignSelf="end" color="#8695A0">{message.time}</Text>
+                                    <Text size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" color=" #5DC2C4" bg=" #E0F3F3" h="38px" textAlign="center" alignContent="center">{message.text}</Text>
+                                    <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
                                 </Box> :
                                 <Box mb="16px" display="flex" justifyContent="space-between">
-                                     <Text alignSelf="end" color="#8695A0">{message.time}</Text>
-                                     <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" color=" #5DC2C4" bg=" #E0F3F3" h="38px" textAlign="center">{message.text}</Text>
+                                     <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
+                                     <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" h="38px" textAlign="center" alignContent="center">{message.text}</Text>
                                 </Box>
                         )
                     })}
@@ -55,7 +55,7 @@ const Chat = () => {
                         </InputRightElement>
                     </InputGroup>
 
-                    <Text h="38px" w="40px" display="flex" justifyContent="center" alignItems="center" borderRadius="100%" background=" #F4694C" color="white" >
+                    <Text h="35px" w="40px" display="flex" justifyContent="center" alignItems="center" borderRadius="100%" background=" #F4694C" color="white" >
                         <VscSend />
                     </Text>
                 </Box>

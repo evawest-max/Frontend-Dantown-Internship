@@ -1,5 +1,6 @@
 import ChatBox from '@/components/chatbox/ChatBox'
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar/Navbar'
+// import Navbar from '@/components/Navbar'
 import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 
@@ -7,12 +8,10 @@ export default function App() {
   return (
     <Box>
       <aside style={{
-        width: "200px",
-        paddingLeft: "15px",
-        marginLeft: "15px",
-        height: "100vh",
+        width: "240px",
+        height: "900px",
         float: "left",
-        backgroundColor: "lightgray",
+        backgroundColor: "white",
       }}
       >
         <Navbar/>
@@ -20,9 +19,7 @@ export default function App() {
 
       <aside style={{
         width: "400px",
-        paddingLeft: "15px",
-        marginLeft: "15px",
-        height: "100vh",
+        height: "900px",
         float: "right",
         backgroundColor: "white",
         borderLeft: "1px solid background: #F7FAFC "
