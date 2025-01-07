@@ -16,7 +16,7 @@ const ChatBox = () => {
         { name: "Ariana Grande", text: "Come on join to my party!", newMessage: "1", photo: "https://img.freepik.com/free-photo/shot-positive-european-young-female-with-dark-curly-hair-has-gentle-smile-freckled-skin-wears-casual-beige-shirt_273609-15736.jpg" },
     ];
     return (
-        <Box className="p-4 bg-gray-50 rounded shadow" display="flex" flexDirection="column" alignItems="center">
+        <Box display="flex" flexDirection="column" alignItems="center" borderLeft="1px solid #ebeff1" bg="#f7fafc">
             <Box display="flex" flexDirection="row" alignItems="center" mt="40px" w="100%" gap="41.35px">
                 <Box h="13.5px" ml="94" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" gap="27.5px">
                     <Text color=" #0F3F62">
@@ -81,7 +81,7 @@ const ChatBox = () => {
                                 {message.newMessage && <Text background="#F4694C" w="24px" h="24px" borderRadius="20px" color="white" textAlign="center"> {message.newMessage}</Text>}
                             </Box>
                         </Card>
-                        {index < 2 ? <Box mt="16px" mb="16px" float="right" w="248px" bg="rgb(224, 217, 214)" h="1px"></Box> : <Text></Text>}
+                        {index < 2 ? <Box mt="16px" mb="16px" float="right" w="248px" bg="#D6DCE0" h="1px"></Box> : <Text></Text>}
                     </Box>
                 ))}
             </Box>

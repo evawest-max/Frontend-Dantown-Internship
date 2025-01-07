@@ -75,7 +75,7 @@ const Navbar = () => {
                 </Link>
             </section>
 
-            <Box h="1px" w="170px" bg="#8695A0" mt="42px" mb="40px"></Box>
+            <Box h="1px" w="170px" bg="#D6DCE0" mt="42px" mb="40px"></Box>
 
             {/* <hr style={{color:"", background:"red"}}/> */}
             <section style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>

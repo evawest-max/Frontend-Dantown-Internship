@@ -1,4 +1,6 @@
 import ChatBox from '@/components/chatbox/ChatBox'
+import Header from '@/components/Header'
+import HighlightCard from '@/components/HighLightCard'
 import Navbar from '@/components/Navbar/Navbar'
 // import Navbar from '@/components/Navbar'
 import { Box, Text } from '@chakra-ui/react'
@@ -14,7 +16,7 @@ export default function App() {
         backgroundColor: "white",
       }}
       >
-        <Navbar/>
+        <Navbar />
       </aside>
 
       <aside style={{
@@ -25,8 +27,13 @@ export default function App() {
         borderLeft: "1px solid background: #F7FAFC "
       }}
       >
-       <ChatBox/> 
+        <ChatBox />
       </aside>
+      <Box >
+        <Header />
+        <HighlightCard />
+      </Box>
+
     </Box>
   )
 }
