@@ -48,7 +48,7 @@ const FriendsRank = () => {
                                 mb="15px"
                                 id={friend.rank !== 1 && "adjust"}
                             >
-                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNone"} textAlign="center" >{friend.rank} </Text>
+                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNone"} >{friend.rank} </Text>
                                 <Box display="flex" alignItems="center" gap="13px">
                                     <Image w="40px" h="40px" borderRadius="50%" src={friend.photo} alt="Friend image" />
                                     <Text color="#0F3F62" display="flex" alignItems="center" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir" justifyContent="space-between" w="224px" textAlign="left">{friend.name}{friend.rank === 1 && <FaCrown style={{ color: "gold" }} />}</Text>
