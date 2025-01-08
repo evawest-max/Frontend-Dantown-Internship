@@ -1,8 +1,4 @@
-import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Box, Button, Card, CardBody, CardFooter, Heading, Image, Input, InputGroup, InputRightElement, Menu, MenuButton, MenuItem, MenuList, Stack, Text } from '@chakra-ui/react';
-import Link from 'next/link';
-import { IoMailOutline } from "react-icons/io5";
-import { RiNotification2Line } from "react-icons/ri";
+import { Box, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react';
 import { CiFaceSmile } from "react-icons/ci";
 import { VscSend } from "react-icons/vsc";
 import { IoMdClose } from "react-icons/io";
@@ -15,7 +11,7 @@ const Chat = () => {
     ];
 
     return (
-        <Box w="320px" h="311px"  borderRadius="15px" bg="white">
+        <Box w="320px" h="311px" borderRadius="15px" bg="white">
             <Box borderTopRadius="15px" background="#5DC2C4" color="white" display="flex" justifyContent="space-between" alignItems="center" pl="24px" pr="24px" h="54px">
                 <Text>Ironmen</Text>
                 <Text cursor="pointer"><IoMdClose /></Text>
@@ -34,8 +30,8 @@ const Chat = () => {
                                     <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
                                 </Box> :
                                 <Box mb="16px" display="flex" justifyContent="space-between">
-                                     <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
-                                     <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" h="38px" textAlign="center" alignContent="center">{message.text}</Text>
+                                    <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
+                                    <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" h="38px" textAlign="center" alignContent="center">{message.text}</Text>
                                 </Box>
                         )
                     })}

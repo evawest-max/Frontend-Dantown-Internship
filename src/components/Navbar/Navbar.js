@@ -13,7 +13,6 @@ import { PiSoccerBallFill } from "react-icons/pi";
 import { IoGameControllerSharp } from "react-icons/io5";
 import { IoMusicalNotes } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
-import {logo} from "./logo.svg"
 
 const Navbar = () => {
     return (
@@ -77,7 +76,6 @@ const Navbar = () => {
 
             <Box h="1px" w="170px" bg="#D6DCE0" mt="42px" mb="40px"></Box>
 
-            {/* <hr style={{color:"", background:"red"}}/> */}
             <section style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
                 <Text w="72px" h="22px" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">
                     Category

@@ -1,11 +1,7 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Box, Button, Card, CardBody, CardFooter, Heading, Image, Input, InputGroup, InputRightElement, Menu, MenuButton, MenuItem, MenuList, Stack, Text } from '@chakra-ui/react';
-import Link from 'next/link';
+import { Box, Button, Card, CardBody, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Stack, Text } from '@chakra-ui/react';
 import { IoMailOutline } from "react-icons/io5";
 import { RiNotification2Line } from "react-icons/ri";
-import { CiFaceSmile } from "react-icons/ci";
-import { VscSend } from "react-icons/vsc";
-import { IoMdClose } from "react-icons/io";
 import Chat from './chat';
 
 
@@ -74,7 +70,7 @@ const ChatBox = () => {
                                     <CardBody border="none" pl="16px" display="flex" flexDirection="column" gap="4px">
                                         <Heading cursor="pointer" size='16px' fontFamily='avenir' fontWeight="800px" lineHeight="21.86px" color="background: #0F3F62;">{message.name}</Heading>
 
-                                        <Text size='14px'  fontWeight="400px" lineHeight="19.12px" color=" #8695A0;">
+                                        <Text size='14px' fontWeight="400px" lineHeight="19.12px" color=" #8695A0;">
                                             {message.text}
                                         </Text>
                                     </CardBody>
